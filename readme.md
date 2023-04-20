@@ -30,6 +30,6 @@ Use this section to recap over some of your major learnings while working throug
 
 ### Links
 
-- Solution URL: [click here] 
-()
-- Live Site URL:[click here]
+- Solution URL: https://github.com/rahulvr29/Barber-Shop.git
+
+- Live Site URL: https://dulcet-truffle-e0400d.netlify.app/
