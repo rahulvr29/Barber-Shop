@@ -4,9 +4,145 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Barber Shop Website</title>
 </head>
 <body>
+  <section id="banner">
+    <img src="./image/logo.png" class="logo">
+    <div class="banner-txt">
+      <h1>Hair Studio</h1>
+      <p>Style Your Hair Is Style Your Life</p>
+      <div class="banner-btn">
+        <a href="#"><span></span> Find Out</a>
+        <a href="#"><span></span> Read More</a>
+      </div>
+    </div>
+  </section>
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FEATURE</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">TESTIMONIALS</a></li>
+        <li><a href="#">MEET US</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menubtn">
+    <img src="./image/menu.png" id="menu">
+  </div>
+
+<section id="feature">
+    <div class="title-text">
+    <P>FEATURE</P>
+    <h1>WHY CHOOSE US</h1>
+  </div>
+  <div class="feature-box">
+    <div class="features">
+      <h1>Experienced Staff</h1>
+      <div class="features-details">
+        <div class="feature-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div class="feature-txt">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum aperiam obcaecati commodi repudiandae possimus laboriosam nostrum ut eligendi quo.</p>
+        </div>
+      </div>
+      <h1>Pre Booking Online</h1>
+      <div class="features-details">
+        <div class="feature-icon">
+          <i class="fa-solid fa-square-check"></i>
+        </div>
+        <div class="feature-txt">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum aperiam obcaecati commodi repudiandae possimus laboriosam nostrum ut eligendi quo.</p>
+        </div>
+      </div>
+      <h1>Affordable Cost</h1>
+      <div class="features-details">
+        <div class="feature-icon">
+          <i class="fa-solid fa-inr"></i>
+        </div>
+        <div class="feature-txt">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum aperiam obcaecati commodi repudiandae possimus laboriosam nostrum ut eligendi quo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="features-img">
+      <img src="./image/barber-man.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="title-text">
+    <P>SERVICE</P>
+    <h1>We Provide Better</h1>
+  </div>
+  <div class="service-box">
+    <div class="single-service">
+      <img src="./image/pic-1.jpg" >
+      <div class="overlay"></div>
+      <div class="service-description">
+        <h3>Hair Styling</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto quo. Expedita quae iusto distinctio.</p>
+      </div>
+    </div>
+    <div class="single-service">
+      <img src="./image/pic-2.jpg" >
+      <div class="overlay"></div>
+      <div class="service-description">
+        <h3>Beard Trim</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto quo. Expedita quae iusto distinctio.</p>
+      </div>
+    </div>
+      
+    <div class="single-service">
+      <img src="./image/pic-3.jpg" >
+      <div class="overlay"></div>
+      <div class="service-description">
+        <h3>Hair Cut</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto quo. Expedita quae iusto distinctio.</p>
+      </div>
+    </div>
+    <div class="single-service">
+      <img src="./image/pic-4.jpg">
+      <div class="overlay"></div>
+      <div class="service-description">
+        <h3>Dry Shampoo </h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, iusto quo. Expedita quae iusto distinctio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var menubtn = document.getElementById("menubtn")
+  var sideNav = document.getElementById("sideNav")
+  var menu = document.getElementById("menu")
   
+  sideNav.style.right = "-250px";
+  
+  menubtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "image/close.png"
+    }
+    else{
+      sideNav.style.right = "-250px";
+      menu.src = "image/menu.png"
+    }
+  }
+</script>
 </body>
 </html>
